@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="author" content="Levin Schaller">
+    <meta charset="UTF-8">
+    <meta name="description" content="B10">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS\Projekt.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+    <br>
+    <nav>
+        <ul class="navigation">
+            <li><a href="1_Home.html">Home</a></li>
+            <li><a href="2_Über_mich.html">Über mich</a></li>
+            <li><a class="active">Kontakt</a></li>
+            <li><a href="4_Weiteres.html">Weiteres</a></li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <h2>Kontakt</h2>
+        <form class="contact">
+
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" minlength="1" maxlength="30" required />
+            </div>
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+                <label for="nachricht">Nachricht</label><br>
+                <textarea name="nachricht" id="nachricht" cols="21" rows="3"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Senden" class="button">
+                <input type="reset" value="Löschen" class="button">
+            </div>
+
+        </form>
+    </main>
+    <aside>
+        <h2>Aside</h2>
+        <p>Inhalt folgt ...</p>
+    </aside>
+    <br>
+    <footer>
+        <p>Author: Levin Schaller</p>
+        <p><a href="mailto:levin.schaller@bbzbl-it.ch">levin.schaller@bbzbl-it.ch</a>
+    </footer>
+</body>
+
+</html>
