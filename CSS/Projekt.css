@@ -15,8 +15,6 @@ h3 {
 
 /* ---------------------------------------------------------------------------------------*/
 
-
-
 /* Elemente für Navigation */
 
 .navigation {
@@ -59,8 +57,6 @@ ul {
 
 /* ---------------------------------------------------------------------------------------*/
 
-
-
 /* Elemente für Link */
 
 a:visited {
@@ -80,20 +76,18 @@ a:hover {
 
 /* ---------------------------------------------------------------------------------------*/
 
-
-
 /* CSS Grid */
 
 body {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: auto;
     background-color: rgb(67, 94, 79);
 }
 
 body {
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 100px 100px 1fr 1000px;
+    grid-template-rows: 100px 150px 1fr 1000px;
     grid-template-areas:
         "header header"
         "navigation navigation"
@@ -102,16 +96,21 @@ body {
 }
 
 header,
-nav,
+nav {
+    background-color: rgb(71, 71, 71);
+    padding-left: 1px;
+    padding-right: 1px;
+}
 main,
 aside,
 footer {
-    padding: 40px;
     background-color: rgb(71, 71, 71);
+    padding: 50px;
 }
 
 header {
     grid-area: header;
+    /*background-color: rgb(31, 31, 31);*/
 }
 
 nav {
@@ -129,23 +128,22 @@ aside {
 footer {
     grid-area: footer;
     text-align: center;
+    /*background-color: rgb(31, 31, 31);*/
 }
 
 #img1 {
     width: 200px;
     padding: 0px;
-    margin: 0px;
-    margin-bottom: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     float: left;
 }
 
 #img2 {
     width: 500px;
     padding: 0px;
-    margin: 0px;
+    margin-left: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
     float: right;
 }
 
@@ -166,7 +164,13 @@ footer {
 
 /* ---------------------------------------------------------------------------------------*/
 
+/* Andere Dninge */
 
+main div {
+    margin-bottom: 100px;
+}
+
+/* ---------------------------------------------------------------------------------------*/
 
 /* Kontankt */
 
@@ -174,11 +178,14 @@ footer {
     border-radius: 10px;
     background-color: rgb(61, 61, 61);
     padding: 20px;
+    margin: 20px;
+    width: 80%;
 }
 
 .contact div {
     background-color: rgb(61, 61, 61);
     padding: 5px;
+    margin: 0%;
     border: none;
     border-radius: 4px;
 }
@@ -192,10 +199,6 @@ footer {
     cursor: pointer;
 }
 
-.button :hover {
-    background-color: white;
-}
-
 form input,
 textarea {
     border: 1px solid black;
@@ -205,7 +208,13 @@ textarea {
 
 /* ---------------------------------------------------------------------------------------*/
 
+/* Andere Dninge */
 
+main div {
+    margin-bottom: 100px;
+}
+
+/* ---------------------------------------------------------------------------------------*/
 
 /* Website für Mobiles */
 
@@ -214,7 +223,7 @@ textarea {
     body {
 
         grid-template-columns: 100%;
-        grid-template-rows: 150px 200px 1fr 1fr 100px;
+        grid-template-rows: 150px 200px 1fr 200px 100px;
         grid-template-areas:
             "header"
             "navigation"
@@ -223,8 +232,6 @@ textarea {
             "footer";
 
     }
-
-    /*
     
     #navi {
         display: flex;
@@ -238,12 +245,6 @@ textarea {
         list-style: none;
         margin-right: 5px;
     }
-
-    :root {
-        font-size: 150%;
-    }
-
-    */ 
 
     .navigation {
         list-style-type: none;
