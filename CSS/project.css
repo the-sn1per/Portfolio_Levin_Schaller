@@ -1,5 +1,9 @@
 /* Grundregeln */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: white;
     font-size: 100%;
@@ -23,8 +27,6 @@ h3 {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    /* position: sticky;
-    top: 0; */
 }
 
 .navigation li a {
@@ -46,14 +48,6 @@ h3 {
 .active {
     background-color: rgb(67, 94, 79)
 }
-
-/*
-ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-*/
 
 /* ---------------------------------------------------------------------------------------*/
 
@@ -87,7 +81,7 @@ body {
 body {
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 100px 150px 1fr 1000px;
+    grid-template-rows: auto auto 1fr 1000px;
     grid-template-areas:
         "header header"
         "navigation navigation"
@@ -101,6 +95,7 @@ nav {
     padding-left: 1px;
     padding-right: 1px;
 }
+
 main,
 aside,
 footer {
@@ -131,6 +126,10 @@ footer {
     /*background-color: rgb(31, 31, 31);*/
 }
 
+/* ---------------------------------------------------------------------------------------*/
+
+/* Bilder */
+
 #img1 {
     width: 200px;
     padding: 0px;
@@ -147,10 +146,18 @@ footer {
     float: right;
 }
 
-.home {
+#img3 {
+    width: 800px;
+    padding: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#home {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100px 1fr 1000px;
+    grid-template-rows: auto auto 1fr 1000px;
     grid-template-areas:
         "header header"
         "navigation navigation"
@@ -158,7 +165,7 @@ footer {
         "footer footer";
 }
 
-.home main {
+#home main {
     text-align: center;
 }
 
@@ -218,12 +225,12 @@ main div {
 
 /* Website für Mobiles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     body {
 
         grid-template-columns: 100%;
-        grid-template-rows: 150px 200px 1fr 200px 100px;
+        grid-template-rows: auto auto auto auto 150px;
         grid-template-areas:
             "header"
             "navigation"
@@ -232,33 +239,85 @@ main div {
             "footer";
 
     }
-    
-    #navi {
+
+    #home{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto 150px;
+        grid-template-areas:
+            "header"
+            "navigation"
+            "content"
+            "footer";
+
+    }
+
+    #img2{
+        display: block;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 70%;
+    }
+
+    #img3{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    /* Hamburger */
+
+    nav .navigation {
+        display: none;
+    }
+
+    nav .navigation.active {
         display: flex;
     }
 
-    #navi li {
-        border: 1px solid black;
-        padding: px;
-        background-color: white;
-        flex-direction: column;
-        list-style: none;
-        margin-right: 5px;
+    header {
+        background-color: black
     }
 
-    .navigation {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: #333;
-      }
-      
-    .navigation li a {
-        display: block;
-        color: white;
-        padding: 8px 16px;
-        text-decoration: none;
-      }
+    #hamburger-layout {
+        padding: 16px;
+        background-color: rgb(61, 61, 61);
+    }
 
+    #bar1,
+    #bar2,
+    #bar3 {
+        width: 32px;
+        height: 5px;
+        background-color: #fff;
+        margin: 8px 0;
+        transition: 0.4s;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin: 8px;
+    }
+
+    nav {
+        size: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
 }

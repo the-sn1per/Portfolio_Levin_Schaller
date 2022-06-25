@@ -4,7 +4,8 @@
 <head>
     <meta name="author" content="Levin Schaller">
     <meta charset="UTF-8">
-    <meta name="description" content="B10">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="my portfolio">
     <title>Portfolio</title>
     <link rel="stylesheet" href="CSS\project.css">
 </head>
@@ -12,10 +13,15 @@
 <body>
     <header>
         <h1>Portfolio</h1>
+        <div id="hamburger-layout" onclick="show()">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+        </div>
     </header>
     <br>
     <nav>
-        <ul class="navigation">
+        <ul class="navigation" id="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a class="active">Über mich</a></li>
             <li><a href="contact.html">Kontakt</a></li>
@@ -66,6 +72,7 @@
         <p>©2022 <a href="mailto:levin.schaller@bbzbl-it.ch">levin.schaller@bbzbl-it.ch</a> / <a
                 href="mailto:levinsch@bluewin.ch">levinsch@bluewin.ch</a>
     </footer>
+    <script src="./JavaScript/main.js"></script>
 </body>
 
 </html>

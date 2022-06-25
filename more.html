@@ -4,7 +4,8 @@
 <head>
     <meta name="author" content="Levin Schaller">
     <meta charset="UTF-8">
-    <meta name="description" content="B10">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="more stuff">
     <title>Portfolio</title>
     <link rel="stylesheet" href="CSS\project.css">
 </head>
@@ -12,10 +13,15 @@
 <body>
     <header>
         <h1>Portfolio</h1>
+        <div id="hamburger-layout" onclick="show()">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+        </div>
     </header>
     <br>
     <nav>
-        <ul class="navigation">
+        <ul class="navigation" id="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Über mich</a></li>
             <li><a href="contact.html">Kontakt</a></li>
@@ -49,12 +55,21 @@
         <div>
             <h3>Minecraft</h3>
             <img src="Inhalte\Games\minecraft.png" alt="Minecraft" id="img2">
-            <p>Minecraft ist ein Sandbox-Videospiel entwickelt von Mojang Studios. Das Gameplay beinhaltet, dass Spieler mit
+            <p>Minecraft ist ein Sandbox-Videospiel entwickelt von Mojang Studios. Das Gameplay beinhaltet, dass Spieler
+                mit
                 der Spielwelt interagieren, indem man verschiedene Arten von Blöcken in einer dreidimensionalen Umgebung
                 platziert und abbaut. In dieser Umgebung können Spieler kreative Strukturen, Kreationen und Grafiken auf
-                Mehrspieler Servern und Einzelspieler Welten in mehreren Spielmodi erstellen. Minecraft ist eines der immer
+                Mehrspieler Servern und Einzelspieler Welten in mehreren Spielmodi erstellen. Minecraft ist eines der
+                immer
                 noch meistgespielten und verkaufen Videospielen.</p>
             <p>Ich liebe an Minecraft die Vielseitigkeit und die eigene Kreativität die man gebrauchen kann.</p>
+            <p>................ ................ ................ ................ ................
+                ................ ................ ................ ................ ................ ................
+                ................ ................ ................ ................ ................ ................
+                ................ ................ ................ ................ ................
+                ................ ................ ................ ................ ................ ................
+                ................ ................ ................ ................ ................ ................
+            </p>
             <br>
         </div>
         <div>
@@ -65,31 +80,40 @@
                 die Terroristen (T) und Anti-Terroristen (CT). Die beiden Tema bekämpfen sich dabei mit realistischen
                 Waffen, die Am Anfang jeder Runde mit dem ersparten Geld gekauft werden können. Daneben kann man diverse
                 Granaten, Ausrüstung und andere Gadgets kaufen.</p>
-            <p>Am Rundenanfang spawnen (auftauchen) die fünf Leute pro Team an den jeweiligen Team-Spawnorten, wo dann beide
+            <p>Am Rundenanfang spawnen (auftauchen) die fünf Leute pro Team an den jeweiligen Team-Spawnorten, wo dann
+                beide
                 gleichzeitig loslegen können. Die Terroristen müssen eine Bombe an einem von zwei vorgegebenen Orten
-                platzieren, während die Anti-Terroristen die Terroristen davon abhalten müssen, indem sie die Terroristen
+                platzieren, während die Anti-Terroristen die Terroristen davon abhalten müssen, indem sie die
+                Terroristen
                 besiegen und wenn die Bombe schon platziert ist diese vor dem Enden des Countdowns entschärfen.</p>
-            <p>CS:GO ist ein sehr taktisches Spiel wo man sich gut kommunizieren muss innerhalb des Teams und andererseits
-                muss man präziese sein mit den Waffen und wissen mit welchen Waffen man wo am besten ist. Ausserdem muss man
+            <p>CS:GO ist ein sehr taktisches Spiel wo man sich gut kommunizieren muss innerhalb des Teams und
+                andererseits
+                muss man präziese sein mit den Waffen und wissen mit welchen Waffen man wo am besten ist. Ausserdem muss
+                man
                 siene Positionen gut wählen und sich als Team gut auf die Map verteilen.</p>
             <br>
         </div>
         <div>
             <h3>Battlefield</h3>
             <img src="Inhalte\Games\battlefield2042.jpg" alt="Battlefield" id="img2">
-            <p>Battlefield ist ein Kriegsspiel indem es wie in CS:GO zwei Teams gibt. Der Unterschied ist, dass pro Team bis
-                zu 32 Spieler sind. Die Waffen können frei gewählt und modifiziert werden. Nach dem Start der Runde müssen
+            <p>Battlefield ist ein Kriegsspiel indem es wie in CS:GO zwei Teams gibt. Der Unterschied ist, dass pro Team
+                bis
+                zu 32 Spieler sind. Die Waffen können frei gewählt und modifiziert werden. Nach dem Start der Runde
+                müssen
                 die Teams von Ihrer Basis loslaufen. Zwischen den Basen der beiden Teams sind verschiedene Punkte welche
-                erobert und eingenommen werden können, dazu müssen mehrere Teammitglieder bei einer Flagge stehen und dann
+                erobert und eingenommen werden können, dazu müssen mehrere Teammitglieder bei einer Flagge stehen und
+                dann
                 wird dieser Punkt erobert.</p>
             <p>Dann gibt es eine grosse Schlacht und die Teams probieren so viele Punkte wie möglich einzusammeln. Nach
                 jedem Tod kann man respawnen, heisst man wird wiederbelebt. Das eigene Team verliert aber nach jedem Tod
-                immer ein Ticket. Das Spiel geht solange, bis alle Tickets eines Teams aufgebraucht sind. Bei jedem Spiel
+                immer ein Ticket. Das Spiel geht solange, bis alle Tickets eines Teams aufgebraucht sind. Bei jedem
+                Spiel
                 gibt es dabei zwischen 800 und 3200 Tickets, das kommt auf das Match drauf an.</p>
             <p>Wenn man Kills macht kann man im Rangaufsteigen und bekommt diverse Belohnungen wie neue Waffen, Gangets
                 (z.B. Drohnen) und verschiedene Optimierungen für die Waffen (z.B. Visiere wie Termalvisiere oder 4x
                 Visiere).</p>
-                <img src="Inhalte\Games\battlefield2042.gif" alt="Battlefield2042">
+            <br>
+            <img src="Inhalte\Games\battlefield2042.gif" alt="Battlefield2042" id="img3">
         </div>
         <br>
         <br>
@@ -104,6 +128,7 @@
         <p>©2022 <a href="mailto:levin.schaller@bbzbl-it.ch">levin.schaller@bbzbl-it.ch</a> / <a
                 href="mailto:levinsch@bluewin.ch">levinsch@bluewin.ch</a>
     </footer>
+    <script src="./JavaScript/main.js"></script>
 </body>
 
 </html>
