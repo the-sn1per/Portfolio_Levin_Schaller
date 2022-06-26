@@ -253,7 +253,7 @@ main div {
         display: block;
         margin-left: 5px;
         margin-right: 5px;
-        width: 70%;
+        width: 65%;
     }
 
     #img3{
@@ -280,7 +280,7 @@ main div {
 
     #hamburger-layout {
         padding: 16px;
-        background-color: rgb(61, 61, 61);
+        background-color: black;
     }
 
     #bar1,
@@ -320,8 +320,7 @@ main div {
     }
 
     .burger-active #bar1 {
-        -webkit-transform: rotate(-45deg) translate(-16px, 11.2px);
-        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-11.5px, 8.6px);
    }
 
    .burger-active #bar2 {
@@ -329,7 +328,6 @@ main div {
    }
 
    .burger-active #bar3 {
-        -webkit-transform: rotate(45deg) translate(-14.4px, -14.4px);
-        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-7.2px, -5.7px);
    }
 }
