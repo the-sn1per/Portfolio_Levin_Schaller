@@ -246,7 +246,7 @@ main div {
 
     }
 
-    #home{
+    #home {
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto;
         grid-template-areas:
@@ -261,15 +261,19 @@ main div {
         min-height: 650px;
     }
 
-    #img2{
+    #img2 {
         display: block;
         margin-left: 5px;
         margin-right: 5px;
         width: 65%;
     }
 
-    #img3{
+    #img3 {
         width: 100%;
+    }
+
+    main ul li {
+        font-size: 70%;
     }
 
     iframe{
