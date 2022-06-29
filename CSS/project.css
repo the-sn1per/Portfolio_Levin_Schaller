@@ -212,6 +212,7 @@ textarea {
 .social-media-button img {
     width: 50px;
     margin-bottom: 10px;
+    padding-right: 10px;
     float: left;
 }
 
@@ -225,7 +226,7 @@ textarea {
 /* Andere Dinge */
 
 main div {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -243,8 +244,7 @@ main div {
             "navigation"
             "content"
             "sidebar"
-            "footer";
-
+            "footer"
     }
 
     #home {
@@ -269,7 +269,6 @@ main div {
         float: right;
     }
 
-
     #img2,
     #img3 {
         width: 100%;
@@ -279,8 +278,13 @@ main div {
         font-size: 70%;
     }
 
-    iframe{
+    iframe {
         width: 100%;
+    }
+
+    .social-media-button {
+        display: block;
+        padding-right: 10px;
     }
 
     /* Hamburger */
@@ -319,7 +323,8 @@ main div {
     }
 
     header h1 {
-        margin: 8px;
+        margin: auto;
+        margin-left: 8px;
     }
 
     nav {
