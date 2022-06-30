@@ -134,7 +134,7 @@ footer {
 
 /* Bilder */
 
-#img1 {
+.img1 {
     width: 200px;
     padding: 0px;
     margin-right: 10px;
@@ -142,7 +142,7 @@ footer {
     float: left;
 }
 
-#img2 {
+.img2 {
     width: 500px;
     padding: 0px;
     margin-left: 10px;
@@ -150,7 +150,7 @@ footer {
     float: right;
 }
 
-#img3 {
+.img3 {
     width: 900px;
     padding: 0px;
     margin-right: 10px;
@@ -181,7 +181,6 @@ footer {
     border-radius: 10px;
     background-color: rgb(61, 61, 61);
     padding: 20px;
-    margin-left: 500x;
     width: 100%;
 }
 
@@ -262,15 +261,15 @@ main div {
         min-height: 650px;
     }
 
-    #img1 {
+    .img1 {
         width: 170px;
         margin-left: 10px;
         margin-bottom: 10px;
         float: right;
     }
 
-    #img2,
-    #img3 {
+    .img2,
+    .img3 {
         width: 100%;
     }
 
@@ -327,15 +326,16 @@ main div {
         margin-left: 8px;
     }
 
+    /*
     nav {
         size: auto;
     }
+    */
 
     nav ul {
         display: flex;
         flex-direction: column;
         width: 100%;
-
     }
 
     nav ul li a {
@@ -345,22 +345,41 @@ main div {
 
     .burger-active #bar1 {
         transform: rotate(-45deg) translate(-11.5px, 8.6px);
-   }
+    }
 
-   .burger-active #bar2 {
+    .burger-active #bar2 {
         opacity: 0;
-   }
+    }
 
-   .burger-active #bar3 {
+    .burger-active #bar3 {
         transform: rotate(45deg) translate(-7.2px, -5.7px);
-   }
+    }
 }
 
-/* Website für schmale Mobiles */
+/* --------------------------------------------------------------------------------------- */
+
+/* Weitere kleine Screen Anpassungen */
 
 @media screen and (max-width: 385px) {
 
-    #img1 {
+    .img1 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .img2,
+    .img3 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1550px) {
+
+    .img3 {
         width: 100%;
     }
 
