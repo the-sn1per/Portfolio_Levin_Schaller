@@ -228,6 +228,11 @@ main div {
     padding-bottom: 100px;
 }
 
+iframe {
+    width: 600px;
+    height:450px; 
+}
+
 /* --------------------------------------------------------------------------------------- */
 
 /* Website für Mobiles */
@@ -325,12 +330,6 @@ main div {
         margin: auto;
         margin-left: 8px;
     }
-
-    /*
-    nav {
-        size: auto;
-    }
-    */
 
     nav ul {
         display: flex;
